@@ -5,11 +5,11 @@ import org.aeonbits.owner.Config;
 @Config.Sources("classpath:${mode}.properties")
 public interface EmulatorConfig extends Config {
 
-    @Key("device.name")
+    @Key("device")
     @DefaultValue("Pixel 4")
-    String deviceName();
+    String getDeviceName();
 
     @Key("platformVersion")
-    String platformVersion();
+    String getPlatformVersion();
 
 }

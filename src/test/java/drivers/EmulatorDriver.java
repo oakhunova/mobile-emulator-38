@@ -27,8 +27,8 @@ public class EmulatorDriver implements WebDriverProvider {
         UiAutomator2Options options = new UiAutomator2Options()
                 .setPlatformName("Android")
                 .setAutomationName("UiAutomator2")
-                .setPlatformVersion(config.platformVersion())
-                .setDeviceName(config.deviceName())
+                .setPlatformVersion(config.getPlatformVersion())
+                .setDeviceName(config.getDeviceName())
                 .setApp(getAppPath())
                 .setAppPackage("org.wikipedia.alpha")
                 .setAppActivity("org.wikipedia.main.MainActivity");

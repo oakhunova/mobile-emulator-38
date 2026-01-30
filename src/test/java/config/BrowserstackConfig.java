@@ -21,4 +21,10 @@ public interface BrowserstackConfig extends Config {
     @Key("osVersion")
     String getOsVersion();
 
+    @Key("browserstackURL")
+    String getBrowserstackURL();
+
+    @Key("browserstackAPI")
+    String getBrowserstackAPI();
+
 }
