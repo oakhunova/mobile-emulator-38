@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class OnbordingScreenTests extends TestBase {
+public class OnboardingTest extends TestBase {
 
     @Test
-    void checkOnbordingScreenTest() {
+    void checkOnboardingScreenTest() {
             $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(Condition.text("The Free Encyclopedia"));
             $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
             $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(Condition.text("New ways to explore"));
