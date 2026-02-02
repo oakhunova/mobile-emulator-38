@@ -21,7 +21,8 @@
 <a href="https://github.com/allure-framework/allure2"><img width="6%" title="Allure Report" src="media/logo/Allure-Report.svg"></a>
 <a href="https://telegram.org/"><img width="6%" title="Telegram" src="media/logo/Telegram.svg"></a>
 <a href="https://www.jetbrains.com/idea/"><img width="6%" title="IntelliJ IDEA" src="media/logo/Intellij-original.svg"></a>
-<a href="https://github.com/"><img width="6%" title="GitHub" src="media/logo/Browserstack.svg"></a>
+<a href="https://github.com/"><img width="6%" title="GitHub" src="media/logo/Github-original.svg"></a>
+<a href="https://www.browserstack.com/"><img width="6%" title="Browserstack" src="media/logo/Browserstack.svg"></a>
 </p>
 
 - В данном проекте автотесты написаны на языке <code>Java</code>.
@@ -75,5 +76,5 @@ gradle clean build test -Dmode=browserstack
 ### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Browserstack.svg"> Видео примера запуска теста в Browserstack
 
 <p align="center">
-  <img title="Selenoid Video" src="media/screens/Видео%20Selenoid.gif">
+  <img title="Selenoid Video" src="media/screens/Browserstack video.gif">
 </p>
