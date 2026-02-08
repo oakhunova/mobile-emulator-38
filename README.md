@@ -32,12 +32,14 @@
 
 ## Запуск тестов из терминала
 
-Запуск локально на эмуляторе:
+Команда для локального запуска на эмуляторе:
 ```
 gradle clean build test -Dmode=emulator
 ```
 
-Запуск удаленно в Browserstack:
+Для того, чтобы запустить тесты удаленно в Browserstack, необходимо загрузить файл auth.properties в src/test/resources.
+Файл должен содержать username и key.
+Команда для удаленного запуска в Browserstack:
 ```
 gradle clean build test -Dmode=browserstack
 ```

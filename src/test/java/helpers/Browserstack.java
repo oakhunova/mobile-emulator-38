@@ -7,8 +7,8 @@ import static io.restassured.RestAssured.given;
 
 public class Browserstack {
 
+    private static final BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class, System.getProperties());
     public static String videoUrl(String sessionId) {
-        final BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class, System.getProperties());
         String url = String.format(config.getBrowserstackAPI(), sessionId);
         String user = config.getUsername();
         String key = config.getKey();
@@ -23,3 +23,4 @@ public class Browserstack {
                 .extract().path("automation_session.video_url");
     }
 }
+

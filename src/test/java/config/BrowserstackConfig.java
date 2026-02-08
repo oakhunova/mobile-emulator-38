@@ -1,15 +1,18 @@
-
 package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:${mode}.properties")
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources({
+        "classpath:auth.properties",
+        "classpath:${mode}.properties"
+})
 
 public interface BrowserstackConfig extends Config {
-    @Key("username")
+    @Key("bsUsername")
     String getUsername();
 
-    @Key("key")
+    @Key("bsKey")
     String getKey();
 
     @Key("appURL")
